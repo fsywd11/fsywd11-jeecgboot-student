@@ -13,11 +13,20 @@
     
     <dependencies>
 
+
         <dependency>
             <groupId>org.jeecgframework.boot3</groupId>
-            <artifactId>jeecg-module-school</artifactId>
+            <artifactId>jeecg-module-course</artifactId>
             <version>3.9.0</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.jeecgframework.boot3</groupId>
+            <artifactId>jeecg-module-crouses</artifactId>
+            <version>3.9.0</version>
+        </dependency>
+
         <!-- SYSTEM 系统管理模块 -->
         <dependency>
             <groupId>org.jeecgframework.boot3</groupId>

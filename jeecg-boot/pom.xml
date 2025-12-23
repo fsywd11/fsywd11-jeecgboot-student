@@ -78,7 +78,8 @@
     <module>jeecg-boot-base-core</module>
     <module>jeecg-module-system</module>
     <module>jeecg-boot-module</module>
-    <module>jeecg-module-school</module>
+    <module>jeecg-module-course</module>
+    <module>jeecg-module-crouses</module>
   </modules>
   <repositories>
     <repository>
