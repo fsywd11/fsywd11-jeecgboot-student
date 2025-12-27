@@ -3,13 +3,13 @@ import { defHttp } from '/@/utils/http/axios';
 // 保持原有API路径不变（不修改educrouse拼写）
 enum Api {
   // 已选课程列表
-  getSelectedCourses = '/eduselectcourse/eduCourseSelection/getSelectedCourses',
+  getSelectedCourses = '/test02/eduCourseSelection/getSelectedCourses',
   // 可选课程列表（保留原有拼写educrouse）
-  getOptionalCourses = '/educrouse/eduCourse/getOptionalCourses',
+  getOptionalCourses = '/test02/eduCourse/getOptionalCourses',
   // 选课操作
-  selectCourse = '/eduselectcourse/eduCourseSelection/selectCourse',
+  selectCourse = '/test02/eduCourseSelection/selectCourse',
   // 课程时间冲突检测
-  checkCourseConflict = '/eduselectcourse/eduCourseSelection/checkCourseConflict',
+  checkCourseConflict = '/test02/eduCourseSelection/checkCourseConflict',
 }
 
 /**

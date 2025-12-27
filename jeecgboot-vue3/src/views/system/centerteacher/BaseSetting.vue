@@ -67,23 +67,23 @@
         <div class="grid-layout">
           <div class="margin-bottom-10 font-size-13">
             <span class="gray-75 item-label">工号</span>
-            <span class="gray-3">{{ TeacherInfo.teacher_no || '未填写' }}</span>
+            <span class="gray-3">{{ TeacherInfo?.teacherNo || '未填写' }}</span>
           </div>
           <div class="margin-bottom-10 font-size-13">
             <span class="gray-75 item-label">所属学院</span>
-            <span class="gray-3">{{ TeacherInfo.college || '未填写' }}</span>
+            <span class="gray-3">{{ TeacherInfo?.college || '未填写' }}</span>
           </div>
           <div class="margin-bottom-10 font-size-13">
             <span class="gray-75 item-label">教研室</span>
-            <span class="gray-3">{{ TeacherInfo.department || '未填写' }}</span>
+            <span class="gray-3">{{ TeacherInfo?.department || '未填写' }}</span>
           </div>
           <div class="margin-bottom-10 font-size-13">
             <span class="gray-75 item-label">职称</span>
-            <span class="gray-3">{{ TeacherInfo.title || '未填写' }}</span>
+            <span class="gray-3">{{ TeacherInfo?.title || '未填写' }}</span>
           </div>
           <div class="margin-bottom-10 font-size-13">
             <span class="gray-75 item-label">身份证号</span>
-            <span class="gray-3">{{ TeacherInfo.teacher_id_card || '未填写' }}</span>
+            <span class="gray-3">{{ TeacherInfo?.teacherIdCard || '未填写' }}</span>
           </div>
         </div>
       </div>

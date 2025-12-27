@@ -19,5 +19,25 @@
         <module>jeecg-module-test02-start</module>
     </modules>
 
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.23.3</version>
+        </dependency>
+        <!-- Spring Data Redis 基础依赖（可选，若已引入可忽略） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
 

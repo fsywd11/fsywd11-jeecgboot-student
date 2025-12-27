@@ -20,7 +20,7 @@ enum Api {
   userLogOff = '/sys/user/userLogOff',
   //没有绑定手机号用的修改密码请求地址
   updatePasswordNotBindPhone = '/sys/user/updatePasswordNotBindPhone',
-  queryByUserId = '/edustudent/eduStudent/queryByUserId',
+  queryByUserId = '/test01/eduStudent/queryByUserId',
 }
 
 /**

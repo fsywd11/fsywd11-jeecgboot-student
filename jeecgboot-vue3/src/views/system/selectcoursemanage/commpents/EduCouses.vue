@@ -192,7 +192,7 @@
         },
         // 核心修改：仅当 加载中 / 未选中 / 剩余名额<=0 时禁用退课按钮
         // 已选中且非加载中且有剩余名额时，退课按钮可用
-        disabled: loading.value || !isSelected || remaining <= 0,
+        disabled: loading.value || !isSelected,
       },
     ];
 
