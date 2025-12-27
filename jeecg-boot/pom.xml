@@ -80,6 +80,9 @@
     <module>jeecg-boot-module</module>
     <module>jeecg-module-course</module>
     <module>jeecg-module-crouses</module>
+    <module>jeecg-module-test01</module>
+    <module>jeecg-module-test02</module>
+    <module>jeecg-module-test03</module>
   </modules>
   <repositories>
     <repository>
@@ -643,7 +646,7 @@
         <!--当前环境-->
         <profile.name>dev</profile.name>
         <!--Nacos服务地址-->
-        <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+        <config.server-addr>127.0.0.1:8848</config.server-addr>
         <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
         <config.namespace>springboot3</config.namespace>
         <!--Nacos配置分组名称-->
@@ -659,13 +662,13 @@
 			<id>dev</id>
 			<properties>
 				<profile.name>dev</profile.name>
-				<config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+				<config.server-addr>127.0.0.1:8848</config.server-addr>
 				<config.namespace>ac14ab82-51f8-4f0c-aa5b-25fb8384bfb6</config.namespace>
 				<config.group>JEECGDEV_GROUP</config.group>
 				<config.username>nacos</config.username>
 				<config.password>nacos</config.password>
 			</properties>
-		</profile> -->
+		</profile>-->
     <!-- 测试 -->
     <profile>
       <id>test</id>
@@ -673,7 +676,7 @@
         <!--当前环境-->
         <profile.name>test</profile.name>
         <!--Nacos服务地址-->
-        <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+        <config.server-addr>127.0.0.1:8848</config.server-addr>
         <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
         <config.namespace>springboot3</config.namespace>
         <!--Nacos配置分组名称-->
@@ -691,7 +694,7 @@
         <!--当前环境-->
         <profile.name>docker</profile.name>
         <!--Nacos服务地址-->
-        <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+        <config.server-addr>127.0.0.1:8848</config.server-addr>
         <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
         <config.namespace>springboot3</config.namespace>
         <!--Nacos配置分组名称-->
@@ -709,7 +712,7 @@
         <!--当前环境-->
         <profile.name>prod</profile.name>
         <!--Nacos服务地址-->
-        <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+        <config.server-addr>127.0.0.1:8848</config.server-addr>
         <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
         <config.namespace>springboot3</config.namespace>
         <!--Nacos配置分组名称-->
