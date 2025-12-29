@@ -10,6 +10,7 @@ import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.modules.demo.extenduser.entity.EduCourse;
 import org.jeecg.modules.demo.extenduser.entity.EduCourseSelection;
+import org.jeecg.modules.demo.extenduser.entity.EduStudentScore;
 import org.jeecg.modules.demo.extenduser.service.IEduCourseSelectionService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -17,6 +18,8 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.extern.slf4j.Slf4j;
 import org.jeecg.common.system.base.controller.JeecgController;
 import org.jeecg.modules.demo.extenduser.service.IEduCourseService;
+import org.jeecg.modules.demo.extenduser.service.IEduStudentScoreService;
+import org.jeecg.modules.erp.api.EduStudentfeign;
 import org.redisson.api.RAtomicLong;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -55,6 +58,14 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 	// 注入RedisTemplate（缓存操作）
 	@Autowired
 	private RedisTemplate<String, Object> redisTemplate;
+
+	@Autowired
+	private IEduStudentScoreService eduStudentScoreService;
+
+
+	//注入EduStudentfeign
+	@Autowired
+	private EduStudentfeign eduStudentfeign;
 
 	// Redis Key前缀定义（统一管理，便于维护）
 	private static final String COURSE_CURRENT_STUDENT_KEY = "course:current:student:"; // 课程当前人数Key
@@ -119,6 +130,7 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 		// 1. 分布式锁Key（学生ID+课程ID，细粒度锁，不影响其他操作）
 		String lockKey = DROP_COURSE_LOCK_KEY + studentId + ":" + courseId;
 		RLock lock = redissonClient.getLock(lockKey);
+
 		try {
 			// 2. 获取分布式锁（等待3秒，自动释放30秒，防止死锁）
 			boolean lockAcquired = lock.tryLock(3, 30, TimeUnit.SECONDS);
@@ -136,6 +148,7 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 			queryWrapper.eq("course_id", courseId)
 					.eq("student_id", studentId);
 			EduCourseSelection eduCourseSelection = eduCourseSelectionService.getOne(queryWrapper);
+			String selectionId=eduCourseSelection.getId();
 			if (eduCourseSelection == null) {
 				return Result.error("选课记录不存在，无法删除");
 			}
@@ -174,6 +187,9 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 				return Result.error("删除选课记录失败");
 			}
 
+			QueryWrapper<EduStudentScore> scoreQueryWrapper = new QueryWrapper<>();
+			scoreQueryWrapper.eq("select_id", selectionId);
+			eduStudentScoreService.remove(scoreQueryWrapper);
 			// 7.2 更新数据库课程人数（安全更新：强制取0和(currentStudent-1)的最大值，避免负数）
 			int newDbCurrent = Math.max(0, currentStudent - 1);
 			boolean updateCourseSuccess = eduCourseService.lambdaUpdate()
@@ -191,6 +207,7 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 			// 8. 同步更新Redis缓存（课程人数 + 状态）
 			redisTemplate.opsForValue().set(COURSE_CURRENT_STUDENT_KEY + courseId, newDbCurrent, 1, TimeUnit.HOURS);
 			redisTemplate.opsForValue().set(COURSE_INFO_KEY + courseId, eduCourse, 1, TimeUnit.HOURS); // 同步课程信息缓存
+			//删除对应的成绩列表
 
 			return Result.OK("退课成功!");
 		} catch (InterruptedException e) {
@@ -225,6 +242,8 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 	@DeleteMapping(value = "/deleteBatch")
 	public Result<String> deleteBatch(@RequestParam(name="ids",required=true) String ids) {
 		this.eduCourseSelectionService.removeByIds(Arrays.asList(ids.split(",")));
+		// 批量删除选课成绩数据，一次性全部删除
+		eduStudentScoreService.remove(new QueryWrapper<EduStudentScore>().in("select_id", ids.split(",")));
 		return Result.OK("批量删除成功!");
 	}
 
@@ -345,6 +364,8 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 			selection.setCourseId(courseId);
 			selection.setCourseNo(course.getCourseNo());
 			selection.setCourseName(course.getCourseName());
+			//插入学号
+			selection.setStudentNo(eduStudentfeign.queryByUserId(studentId).getResult().getStudentNo());
 			selection.setStatus("1");
 			boolean saveSuccess = eduCourseSelectionService.save(selection);
 			if (!saveSuccess) {
@@ -371,6 +392,7 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 			redisTemplate.opsForValue().set(COURSE_MAX_STUDENT_KEY + courseId, maxStudent, 1, TimeUnit.HOURS);
 			redisTemplate.opsForValue().set(COURSE_INFO_KEY + courseId, course, 1, TimeUnit.HOURS); // 同步课程信息
 
+			addCourseIdAndStudentIdAndSelectionIdAndTeacherIdToSelectionRecord(selection, course);
 			return Result.OK("选课成功");
 		} catch (InterruptedException e) {
 			log.error("获取选课分布式锁异常", e);
@@ -487,5 +509,23 @@ public class EduCourseSelectionController extends JeecgController<EduCourseSelec
 			redisCurrentStudent.set(currentStudent);
 			redisTemplate.opsForValue().set(currentRedisKey, currentStudent, 1, TimeUnit.HOURS);
 		}
+	}
+
+
+	/**
+	 * 选课成功后添加对应的课程id和学生id和选课id和教师id到选课记录里面
+	 * 封装成一个方法，在选课后直接插入
+	 */
+	private void addCourseIdAndStudentIdAndSelectionIdAndTeacherIdToSelectionRecord(EduCourseSelection selection, EduCourse course) {
+		//成绩记录
+		EduStudentScore studentScore = new EduStudentScore();
+		studentScore.setId(IdUtil.simpleUUID());
+		studentScore.setCourseId(course.getId());
+		studentScore.setSelectId(selection.getId());
+		studentScore.setStudentId(selection.getStudentId());
+		//教师id
+		studentScore.setTeacherId(course.getTeacherId());
+		studentScore.setScoreStatus("1");
+		eduStudentScoreService.save(studentScore);
 	}
 }
