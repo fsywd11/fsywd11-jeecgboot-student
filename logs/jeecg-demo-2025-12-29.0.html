@@ -1,0 +1,771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Dec 29 17:51:51 CST 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:51,331</td>
+<td class="Message">HV000001: Hibernate Validator 8.0.3.Final</td>
+<td class="MethodOfCaller">&lt;clinit&gt;</td>
+<td class="FileOfCaller">Version.java</td>
+<td class="LineOfCaller">21</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:51,412</td>
+<td class="Message">Starting JeecgDemoCloudApplication using Java 17.0.17 with PID 56188 (D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot\jeecg-server-cloud\jeecg-demo-cloud-start\target\classes started by s1362 in D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">53</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:51,414</td>
+<td class="Message">No active profile set, falling back to 1 default profile: &quot;default&quot;</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">652</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:51,720</td>
+<td class="Message">[Nacos Config] Load config[dataId=jeecg-dev.yaml, group=DEFAULT_GROUP] success</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">LogLevel.java</td>
+<td class="LineOfCaller">68</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:51,722</td>
+<td class="Message">[Nacos Config] Load config[dataId=jeecg.yaml, group=DEFAULT_GROUP] success</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">LogLevel.java</td>
+<td class="LineOfCaller">68</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:53,969</td>
+<td class="Message">Multiple Spring Data modules found, entering strict repository configuration mode</td>
+<td class="MethodOfCaller">multipleStoresDetected</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">294</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:53,973</td>
+<td class="Message">Bootstrapping Spring Data Redis repositories in DEFAULT mode.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">145</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:54,073</td>
+<td class="Message">Finished Spring Data repository scanning in 82 ms. Found 0 Redis repository interfaces.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">213</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:54,274</td>
+<td class="Message"> ******************* init miniDao config [ begin ] *********************** </td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">23</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:54,275</td>
+<td class="Message"> ------ minidao.base-package ------- org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*</td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">26</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:54,277</td>
+<td class="Message"> *******************  init miniDao config  [ end ] *********************** </td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 17:51:54,351</td>
+<td class="Message">No Dao interface was found in &#39;[org.jeecg.modules.jmreport.*, org.jeecg.modules.drag.*]&#39; package. Please check your configuration.</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">42</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:54,542</td>
+<td class="Message">BeanFactory id=1379250b-c1d8-3b8b-a3db-fa83f249d270</td>
+<td class="MethodOfCaller">setSerializationId</td>
+<td class="FileOfCaller">GenericScope.java</td>
+<td class="LineOfCaller">280</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:55,202</td>
+<td class="Message">===============(1)创建缓存管理器RedisCacheManager</td>
+<td class="MethodOfCaller">redisCacheManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">293</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:55,204</td>
+<td class="Message">===============(2)创建RedisManager,连接Redis..</td>
+<td class="MethodOfCaller">redisManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">314</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,153</td>
+<td class="Message">Tomcat initialized with port 7002 (http)</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">111</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,172</td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-7002&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">168</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,175</td>
+<td class="Message">Starting service [Tomcat]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">168</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,175</td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/10.1.44]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">168</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,292</td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">168</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,293</td>
+<td class="Message">Root WebApplicationContext: initialization completed in 4566 ms</td>
+<td class="MethodOfCaller">prepareWebApplicationContext</td>
+<td class="FileOfCaller">ServletWebServerApplicationContext.java</td>
+<td class="LineOfCaller">301</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,635</td>
+<td class="Message">Suspicious URL pattern: [/airag/chat/receive/**] in context [], see sections 12.1 and 12.2 of the Servlet specification</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">168</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:56,834</td>
+<td class="Message"> --- redis config init ---，耗时: 80ms</td>
+<td class="MethodOfCaller">redisTemplate</td>
+<td class="FileOfCaller">RedisConfig.java</td>
+<td class="LineOfCaller">77</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:57,373</td>
+<td class="Message">{dataSource-1,master} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">673</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:57,375</td>
+<td class="Message">dynamic-datasource - add a datasource named [master] success</td>
+<td class="MethodOfCaller">addDataSource</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">158</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:57,376</td>
+<td class="Message">dynamic-datasource initial loaded [1] datasource,primary datasource named [master]</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:57,407</td>
+<td class="Message">当前数据库类型: MYSQL</td>
+<td class="MethodOfCaller">mybatisPlusInterceptor</td>
+<td class="FileOfCaller">MybatisPlusSaasConfig.java</td>
+<td class="LineOfCaller">138</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:58,541</td>
+<td class="Message">PrometheusMeterRegistry 配置完成</td>
+<td class="MethodOfCaller">initPrometheusMeterRegistry</td>
+<td class="FileOfCaller">WebMvcConfiguration.java</td>
+<td class="LineOfCaller">166</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:58,887</td>
+<td class="Message">Init Token ignoreAuthUrls Config [ 集合 ]  ：[/test/jeecgDemo/html]</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">IgnoreAuthPostProcessor.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:58,889</td>
+<td class="Message">Init Token ignoreAuthUrls Config [ 耗时 ] ：4ms</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">IgnoreAuthPostProcessor.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:51:58,973</td>
+<td class="Message">商品数据初始化完成,共13个商品</td>
+<td class="MethodOfCaller">initProducts</td>
+<td class="FileOfCaller">ShopController.java</td>
+<td class="LineOfCaller">75</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:00,750</td>
+<td class="Message">[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].</td>
+<td class="MethodOfCaller">addInterceptors</td>
+<td class="FileOfCaller">SentinelWebMvcConfigurer.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:02,255</td>
+<td class="Message">Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@793d163b</td>
+<td class="MethodOfCaller">setApplicationContext</td>
+<td class="FileOfCaller">MybatisPlusApplicationContextAware.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,280</td>
+<td class="Message">Using default implementation for ThreadExecutor</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1222</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,287</td>
+<td class="Message">Job execution threads will use class loader of thread: main</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">SimpleThreadPool.java</td>
+<td class="LineOfCaller">269</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,302</td>
+<td class="Message">Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">SchedulerSignalerImpl.java</td>
+<td class="LineOfCaller">62</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,302</td>
+<td class="Message">Quartz Scheduler v2.5.0 created.</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,305</td>
+<td class="Message">Using db table-based data access locking (synchronization).</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">673</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,309</td>
+<td class="Message">JobStoreCMT initialized.</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreCMT.java</td>
+<td class="LineOfCaller">147</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,310</td>
+<td class="Message">Scheduler meta-data: Quartz Scheduler (v2.5.0) &#39;MyScheduler&#39; with instanceId &#39;aef1767001923285&#39;
+  Scheduler class: &#39;org.quartz.core.QuartzScheduler&#39; - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool &#39;org.quartz.simpl.SimpleThreadPool&#39; - with 10 threads.
+  Using job-store &#39;org.springframework.scheduling.quartz.LocalDataSourceJobStore&#39; - which supports persistence. and is clustered.
+</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">289</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,311</td>
+<td class="Message">Quartz scheduler &#39;MyScheduler&#39; initialized from an externally provided properties instance.</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1376</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,311</td>
+<td class="Message">Quartz scheduler version: 2.5.0</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1378</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:03,311</td>
+<td class="Message">JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@317c16bd</td>
+<td class="MethodOfCaller">setJobFactory</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">2240</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:04,944</td>
+<td class="Message">Exposing 1 endpoint beneath base path &#39;/actuator&#39;</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">EndpointLinksResolver.java</td>
+<td class="LineOfCaller">60</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:05,296</td>
+<td class="Message">Starting ProtocolHandler [&quot;http-nio-7002&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">168</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:05,319</td>
+<td class="Message">Tomcat started on port 7002 (http) with context path &#39;/&#39;</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">243</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:05,346</td>
+<td class="Message">[ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">ClientAuthPluginManager.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:05,346</td>
+<td class="Message">[ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">ClientAuthPluginManager.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2025-12-29 17:52:06,202</td>
+<td class="Message">nacos registry, jeecg-demo register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr=&#39;null&#39;, username=&#39;******&#39;, password=&#39;******&#39;, endpoint=&#39;null&#39;, namespace=&#39;null&#39;, watchDelay=30000, logName=&#39;null&#39;, service=&#39;null&#39;, weight=1.0, clusterName=&#39;null&#39;, group=&#39;DEFAULT_GROUP&#39;, namingLoadCacheAtStart=&#39;false&#39;, metadata={}, registerEnabled=true, ip=&#39;null&#39;, networkInterface=&#39;&#39;, port=-1, secure=false, accessKey=&#39;null&#39;, secretKey=&#39;null&#39;, heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">NacosServiceRegistry.java</td>
+<td class="LineOfCaller">81</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:624)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:447)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:250)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerServiceForEphemeral(NamingGrpcClientProxy.java:145)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:136)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:95)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:158)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:81)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:49)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.JeecgDemoCloudApplication.main(JeecgDemoCloudApplication.java:22)
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,205</td>
+<td class="Message">Stopping ProtocolHandler [&quot;http-nio-7002&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">168</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 17:52:06,729</td>
+<td class="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean &#39;webServerStartStop&#39;</td>
+<td class="MethodOfCaller">refresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">635</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,736</td>
+<td class="Message">Shutting down Quartz Scheduler</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">SchedulerFactoryBean.java</td>
+<td class="LineOfCaller">845</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,736</td>
+<td class="Message">Scheduler MyScheduler_$_aef1767001923285 shutting down.</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">656</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,736</td>
+<td class="Message">Scheduler MyScheduler_$_aef1767001923285 paused.</td>
+<td class="MethodOfCaller">standby</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">576</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,736</td>
+<td class="Message">Scheduler MyScheduler_$_aef1767001923285 shutdown complete.</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">728</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,742</td>
+<td class="Message">dynamic-datasource start closing ....</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">215</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,745</td>
+<td class="Message">{dataSource-1} closing ...</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1880</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,751</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1953</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,751</td>
+<td class="Message">dynamic-datasource close the datasource named [master] success,</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">DefaultDataSourceDestroyer.java</td>
+<td class="LineOfCaller">98</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,752</td>
+<td class="Message">dynamic-datasource all closed success,bye</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">219</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:06,910</td>
+<td class="Message">
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with &#39;debug&#39; enabled.</td>
+<td class="MethodOfCaller">logMessage</td>
+<td class="FileOfCaller">ConditionEvaluationReportLogger.java</td>
+<td class="LineOfCaller">82</td>
+</tr>
+
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2025-12-29 17:52:06,935</td>
+<td class="Message">Application run failed</td>
+<td class="MethodOfCaller">reportFailure</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">857</td>
+</tr>
+<tr><td class="Exception" colspan="6">org.springframework.context.ApplicationContextException: Failed to start bean &#39;webServerStartStop&#39;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:408)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.JeecgDemoCloudApplication.main(JeecgDemoCloudApplication.java:22)
+<br />Caused by: java.lang.reflect.UndeclaredThrowableException: null
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:81)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:49)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:624)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:447)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:250)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerServiceForEphemeral(NamingGrpcClientProxy.java:145)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:136)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:95)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:158)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 26 common frames omitted
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:09,925</td>
+<td class="Message">Ready to get current node abilities...</td>
+<td class="MethodOfCaller">initAbilityTable</td>
+<td class="FileOfCaller">AbstractAbilityControlManager.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:09,927</td>
+<td class="Message">Ready to initialize current node abilities, support modes: [SDK_CLIENT]</td>
+<td class="MethodOfCaller">initAbilityTable</td>
+<td class="FileOfCaller">AbstractAbilityControlManager.java</td>
+<td class="LineOfCaller">89</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:09,928</td>
+<td class="Message">Initialize current abilities finish...</td>
+<td class="MethodOfCaller">initAbilityTable</td>
+<td class="FileOfCaller">AbstractAbilityControlManager.java</td>
+<td class="LineOfCaller">94</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2025-12-29 17:52:09,929</td>
+<td class="Message">[AbilityControlManager] Successfully initialize AbilityControlManager</td>
+<td class="MethodOfCaller">initAbilityControlManager</td>
+<td class="FileOfCaller">NacosAbilityManagerHolder.java</td>
+<td class="LineOfCaller">85</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 21:50:03,334</td>
+<td class="Message">[NotifyCenter] Start destroying Publisher</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">NotifyCenter.java</td>
+<td class="LineOfCaller">134</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 21:50:03,334</td>
+<td class="Message">[HttpClientBeanHolder] Start destroying common HttpClient</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">HttpClientBeanHolder.java</td>
+<td class="LineOfCaller">102</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 21:50:03,334</td>
+<td class="Message">[ThreadPoolManager] Start destroying ThreadPool</td>
+<td class="MethodOfCaller">lambda$static$0</td>
+<td class="FileOfCaller">ThreadPoolManager.java</td>
+<td class="LineOfCaller">54</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 21:50:03,385</td>
+<td class="Message">[NotifyCenter] Destruction of the end</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">NotifyCenter.java</td>
+<td class="LineOfCaller">151</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 21:50:03,396</td>
+<td class="Message">[ThreadPoolManager] Destruction of the end</td>
+<td class="MethodOfCaller">lambda$static$0</td>
+<td class="FileOfCaller">ThreadPoolManager.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2025-12-29 21:50:03,426</td>
+<td class="Message">[HttpClientBeanHolder] Destruction of the end</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">HttpClientBeanHolder.java</td>
+<td class="LineOfCaller">111</td>
+</tr>
+</table>
+</body></html>

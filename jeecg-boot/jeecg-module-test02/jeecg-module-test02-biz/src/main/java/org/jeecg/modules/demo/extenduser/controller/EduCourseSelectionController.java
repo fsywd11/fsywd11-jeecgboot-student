@@ -19,7 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.jeecg.common.system.base.controller.JeecgController;
 import org.jeecg.modules.demo.extenduser.service.IEduCourseService;
 import org.jeecg.modules.demo.extenduser.service.IEduStudentScoreService;
-import org.jeecg.modules.erp.api.EduStudentfeign;
+import org.jeecg.modules.demo.LostAndFound.api.EduStudentfeign;
 import org.redisson.api.RAtomicLong;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
