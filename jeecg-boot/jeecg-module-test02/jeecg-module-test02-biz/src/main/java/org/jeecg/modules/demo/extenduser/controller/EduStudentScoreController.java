@@ -2,6 +2,7 @@ package org.jeecg.modules.demo.extenduser.controller;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -56,8 +57,8 @@ public class EduStudentScoreController extends JeecgController<EduStudentScore, 
 
 	 private ScheduledExecutorService scheduler;
 
-	 // 7天对应的毫秒数：7 * 24小时 * 60分 * 60秒 * 1000毫秒
-	 private static final long SEVEN_DAYS_DELAY = 7L * 24 * 60 * 60 * 1000;
+	 // 7天对应的毫秒数：7 * 24小时 * 60分 * 60秒 * 1000毫秒7L * 24 * 60 * 60 * 1000
+	 private static final long SEVEN_DAYS_DELAY = 30000;
 	
 	/**
 	 * 分页列表查询
@@ -95,7 +96,9 @@ public class EduStudentScoreController extends JeecgController<EduStudentScore, 
 	@PostMapping(value = "/add")
 	public Result<String> add(@RequestBody EduStudentScore eduStudentScore) {
 		eduStudentScoreService.save(eduStudentScore);
-
+		if(Objects.equals(eduStudentScore.getScoreStatus(), "3")){
+			eduStudentScoreService.sevenDaysLaterBusiness();
+		}
 		return Result.OK("添加成功！");
 	}
 	
@@ -111,6 +114,9 @@ public class EduStudentScoreController extends JeecgController<EduStudentScore, 
 	@RequestMapping(value = "/edit", method = {RequestMethod.PUT,RequestMethod.POST})
 	public Result<String> edit(@RequestBody EduStudentScore eduStudentScore) {
 		eduStudentScoreService.updateById(eduStudentScore);
+		if(Objects.equals(eduStudentScore.getScoreStatus(), "3")){
+			eduStudentScoreService.sevenDaysLaterBusiness();
+		}
 		return Result.OK("编辑成功!");
 	}
 	
@@ -228,6 +234,8 @@ public class EduStudentScoreController extends JeecgController<EduStudentScore, 
 
 
 		 QueryWrapper<EduStudentScore> queryWrapper = QueryGenerator.initQueryWrapper(eduStudentScore, req.getParameterMap());
+		 // 添加学生ID的查询条件
+		 queryWrapper.eq("student_id", studentId);
 
 		 Page<EduStudentScore> page = new Page<EduStudentScore>(pageNo, pageSize);
 		 IPage<EduStudentScore> pageList = eduStudentScoreService.page(page, queryWrapper);
@@ -255,42 +263,44 @@ public class EduStudentScoreController extends JeecgController<EduStudentScore, 
 
 
 		 QueryWrapper<EduStudentScore> queryWrapper = QueryGenerator.initQueryWrapper(eduStudentScore, req.getParameterMap());
+		 // 添加教师ID的查询条件
+		 queryWrapper.eq("teacher_id", teacherId);
 		 Page<EduStudentScore> page = new Page<EduStudentScore>(pageNo, pageSize);
 		 IPage<EduStudentScore> pageList = eduStudentScoreService.page(page, queryWrapper);
 		 return Result.OK(pageList);
 	 }
 
 
-
-
-	 //自动检查成绩，若是课程已结课，则自动计算成绩的绩点和综合成绩，根据成绩和占比，并在7天后执行
-	 /**
-	  * 项目启动后，自动触发7天后的一次性任务
-	  * @PostConstruct：组件初始化完成后执行（用于触发延迟任务）
-	  */
-	 @PostConstruct
-	 public void initSevenDaysLaterTask() {
-		 // 创建单线程调度器（用于执行延迟任务）
-		 scheduler = Executors.newSingleThreadScheduledExecutor();
-		 // 调度任务：延迟 SEVEN_DAYS_DELAY 后，执行指定任务
-		 scheduler.schedule(this::sevenDaysLaterBusiness, SEVEN_DAYS_DELAY, TimeUnit.MILLISECONDS);
-
-	 }
-
-	 /**
-	  * 7天后要执行的业务逻辑（核心业务代码）
-	  */
-	 @Async // 异步执行，不阻塞主线程（可选，推荐添加）
-	 public void sevenDaysLaterBusiness() {
-		 try {
-			 // 执行结算业务
-			 eduStudentScoreService.sevenDaysLaterBusiness();
-			 log.info("结算任务执行完成，时间：{}", new java.util.Date());
-		 } finally {
-			 // 任务执行完成后，关闭调度器（避免线程泄露）
-			 if (scheduler != null && !scheduler.isShutdown()) {
-				 scheduler.shutdown();
-			 }
-		 }
-	 }
+//
+//
+//	 //自动检查成绩，若是课程已结课，则自动计算成绩的绩点和综合成绩，根据成绩和占比，并在7天后执行
+//	 /**
+//	  * 项目启动后，自动触发7天后的一次性任务
+//	  * @PostConstruct：组件初始化完成后执行（用于触发延迟任务）
+//	  */
+//	 @PostConstruct
+//	 public void initSevenDaysLaterTask() {
+//		 // 创建单线程调度器（用于执行延迟任务）
+//		 scheduler = Executors.newSingleThreadScheduledExecutor();
+//		 // 调度任务：延迟 SEVEN_DAYS_DELAY 后，执行指定任务
+//		 scheduler.schedule(this::sevenDaysLaterBusiness, SEVEN_DAYS_DELAY, TimeUnit.MILLISECONDS);
+//
+//	 }
+//
+//	 /**
+//	  * 7天后要执行的业务逻辑（核心业务代码）
+//	  */
+//	 @Async // 异步执行，不阻塞主线程（可选，推荐添加）
+//	 public void sevenDaysLaterBusiness() {
+//		 try {
+//			 // 执行结算业务
+//			 eduStudentScoreService.sevenDaysLaterBusiness();
+//			 log.info("结算任务执行完成，时间：{}", new java.util.Date());
+//		 } finally {
+//			 // 任务执行完成后，关闭调度器（避免线程泄露）
+//			 if (scheduler != null && !scheduler.isShutdown()) {
+//				 scheduler.shutdown();
+//			 }
+//		 }
+//	 }
 }

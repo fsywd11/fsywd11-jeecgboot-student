@@ -41,6 +41,12 @@
             <groupId>org.jeecgframework.boot3</groupId>
             <artifactId>jeecg-boot-starter-job</artifactId>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- feign 熔断限流、分布式锁、xxljob示例 
         <dependency>

@@ -166,20 +166,20 @@
     { text: '男', value: '1' },
     { text: '女', value: '2' },
   ];
-  const COLLEGEOption = getDictItemsByCode('COLLEGE') || [
+  const COLLEGEOption = getDictItemsByCode('college') || [
     { text: '计算机学院', value: '1' },
     { text: '电子工程学院', value: '2' },
     { text: '文学院', value: '3' },
   ];
   //获取专业major
-  const MAJOROption = getDictItemsByCode('MAJOR') || [
+  const MAJOROption = getDictItemsByCode('major') || [
     { text: '软件工程', value: '1' },
     { text: '网络工程', value: '2' },
     { text: '物联网', value: '3' },
   ]
 
   //获取年级
-  const GRADEOption = getDictItemsByCode('GRADE') || [
+  const GRADEOption = getDictItemsByCode('grade') || [
     { text: '2021级', value: '1' },
     { text: '2022级', value: '2' },
     { text: '2023级', value: '3' },

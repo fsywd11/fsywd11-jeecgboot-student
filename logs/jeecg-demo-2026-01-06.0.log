@@ -1,0 +1,160 @@
+2026-01-06 12:06:34.815 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:21 - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-06 12:06:34.976 [main] INFO  org.jeecg.JeecgDemoCloudApplication:53 - Starting JeecgDemoCloudApplication using Java 17.0.17 with PID 43472 (D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot\jeecg-server-cloud\jeecg-demo-cloud-start\target\classes started by s1362 in D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot)
+2026-01-06 12:06:34.979 [main] INFO  org.jeecg.JeecgDemoCloudApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2026-01-06 12:06:35.718 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg-dev.yaml, group=DEFAULT_GROUP] success
+2026-01-06 12:06:35.720 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg.yaml, group=DEFAULT_GROUP] success
+2026-01-06 12:06:42.683 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:294 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-06 12:06:42.693 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-06 12:06:43.065 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:213 - Finished Spring Data repository scanning in 317 ms. Found 0 Redis repository interfaces.
+2026-01-06 12:06:43.328 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:23 -  ******************* init miniDao config [ begin ] *********************** 
+2026-01-06 12:06:43.329 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:26 -  ------ minidao.base-package ------- org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*
+2026-01-06 12:06:43.331 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:50 -  *******************  init miniDao config  [ end ] *********************** 
+2026-01-06 12:06:43.449 [main] WARN  o.j.minidao.factory.MiniDaoClassPathMapperScanner:42 - No Dao interface was found in '[org.jeecg.modules.jmreport.*, org.jeecg.modules.drag.*]' package. Please check your configuration.
+2026-01-06 12:06:43.725 [main] INFO  o.springframework.cloud.context.scope.GenericScope:280 - BeanFactory id=1379250b-c1d8-3b8b-a3db-fa83f249d270
+2026-01-06 12:06:44.743 [main] INFO  org.jeecg.config.shiro.ShiroConfig:293 - ===============(1)创建缓存管理器RedisCacheManager
+2026-01-06 12:06:44.747 [main] INFO  org.jeecg.config.shiro.ShiroConfig:314 - ===============(2)创建RedisManager,连接Redis..
+2026-01-06 12:06:45.899 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 7002 (http)
+2026-01-06 12:06:45.928 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-7002"]
+2026-01-06 12:06:45.933 [main] INFO  org.apache.catalina.core.StandardService:168 - Starting service [Tomcat]
+2026-01-06 12:06:45.934 [main] INFO  org.apache.catalina.core.StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2026-01-06 12:06:46.103 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring embedded WebApplicationContext
+2026-01-06 12:06:46.104 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 10376 ms
+2026-01-06 12:06:46.573 [main] INFO  org.apache.catalina.core.StandardContext:168 - Suspicious URL pattern: [/airag/chat/receive/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+2026-01-06 12:06:46.877 [main] INFO  org.jeecg.common.modules.redis.config.RedisConfig:77 -  --- redis config init ---，耗时: 140ms
+2026-01-06 12:06:47.633 [main] INFO  com.alibaba.druid.pool.DruidDataSource:673 - {dataSource-1,master} inited
+2026-01-06 12:06:47.634 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:158 - dynamic-datasource - add a datasource named [master] success
+2026-01-06 12:06:47.635 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:241 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-01-06 12:06:47.681 [main] INFO  org.jeecg.config.mybatis.MybatisPlusSaasConfig:138 - 当前数据库类型: MYSQL
+2026-01-06 12:06:49.245 [main] INFO  org.jeecg.config.WebMvcConfiguration:166 - PrometheusMeterRegistry 配置完成
+2026-01-06 12:06:49.676 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:48 - Init Token ignoreAuthUrls Config [ 集合 ]  ：[/test/jeecgDemo/html]
+2026-01-06 12:06:49.678 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:56 - Init Token ignoreAuthUrls Config [ 耗时 ] ：5ms
+2026-01-06 12:06:49.787 [main] INFO  o.j.modules.demo.shop.controller.ShopController:75 - 商品数据初始化完成,共13个商品
+2026-01-06 12:06:51.664 [main] INFO  c.alibaba.cloud.sentinel.SentinelWebMvcConfigurer:52 - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2026-01-06 12:06:53.072 [main] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware:40 - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6dc1dc69
+2026-01-06 12:06:55.081 [main] INFO  org.quartz.impl.StdSchedulerFactory:1222 - Using default implementation for ThreadExecutor
+2026-01-06 12:06:55.088 [main] INFO  org.quartz.simpl.SimpleThreadPool:269 - Job execution threads will use class loader of thread: main
+2026-01-06 12:06:55.108 [main] INFO  org.quartz.core.SchedulerSignalerImpl:62 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-01-06 12:06:55.109 [main] INFO  org.quartz.core.QuartzScheduler:224 - Quartz Scheduler v2.5.0 created.
+2026-01-06 12:06:55.114 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:673 - Using db table-based data access locking (synchronization).
+2026-01-06 12:06:55.118 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:147 - JobStoreCMT initialized.
+2026-01-06 12:06:55.120 [main] INFO  org.quartz.core.QuartzScheduler:289 - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'MyScheduler' with instanceId 'aef1767672415084'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2026-01-06 12:06:55.121 [main] INFO  org.quartz.impl.StdSchedulerFactory:1376 - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2026-01-06 12:06:55.122 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.5.0
+2026-01-06 12:06:55.122 [main] INFO  org.quartz.core.QuartzScheduler:2240 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2935042e
+2026-01-06 12:06:57.299 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:60 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-06 12:06:57.709 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-7002"]
+2026-01-06 12:06:57.736 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 7002 (http) with context path '/'
+2026-01-06 12:06:57.770 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-01-06 12:06:57.771 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-01-06 12:06:58.371 [main] ERROR c.a.cloud.nacos.registry.NacosServiceRegistry:81 - nacos registry, jeecg-demo register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='null', username='******', password='******', endpoint='null', namespace='null', watchDelay=30000, logName='null', service='null', weight=1.0, clusterName='null', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={}, registerEnabled=true, ip='null', networkInterface='', port=-1, secure=false, accessKey='null', secretKey='null', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:624)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:447)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:250)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerServiceForEphemeral(NamingGrpcClientProxy.java:145)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:136)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:95)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:158)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:81)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:119)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:47)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.jeecg.JeecgDemoCloudApplication.main(JeecgDemoCloudApplication.java:22)
+2026-01-06 12:06:58.378 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Stopping ProtocolHandler ["http-nio-7002"]
+2026-01-06 12:06:58.544 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-01-06 12:06:58.551 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+2026-01-06 12:06:58.552 [main] INFO  org.quartz.core.QuartzScheduler:656 - Scheduler MyScheduler_$_aef1767672415084 shutting down.
+2026-01-06 12:06:58.552 [main] INFO  org.quartz.core.QuartzScheduler:576 - Scheduler MyScheduler_$_aef1767672415084 paused.
+2026-01-06 12:06:58.552 [main] INFO  org.quartz.core.QuartzScheduler:728 - Scheduler MyScheduler_$_aef1767672415084 shutdown complete.
+2026-01-06 12:06:58.562 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:215 - dynamic-datasource start closing ....
+2026-01-06 12:06:58.566 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1880 - {dataSource-1} closing ...
+2026-01-06 12:06:58.571 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1953 - {dataSource-1} closed
+2026-01-06 12:06:58.572 [main] INFO  c.b.d.d.destroyer.DefaultDataSourceDestroyer:98 - dynamic-datasource close the datasource named [master] success,
+2026-01-06 12:06:58.572 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:219 - dynamic-datasource all closed success,bye
+2026-01-06 12:06:58.848 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-06 12:06:58.885 [main] ERROR org.springframework.boot.SpringApplication:857 - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:408)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.jeecg.JeecgDemoCloudApplication.main(JeecgDemoCloudApplication.java:22)
+Caused by: java.lang.reflect.UndeclaredThrowableException: null
+	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:81)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:119)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:47)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405)
+	... 14 common frames omitted
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:624)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:447)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:250)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerServiceForEphemeral(NamingGrpcClientProxy.java:145)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:136)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:95)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:158)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75)
+	... 26 common frames omitted
+2026-01-06 12:07:23.513 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.common.ability.AbstractAbilityControlManager:61 - Ready to get current node abilities...
+2026-01-06 12:07:23.529 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.common.ability.AbstractAbilityControlManager:89 - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-01-06 12:07:23.538 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.common.ability.AbstractAbilityControlManager:94 - Initialize current abilities finish...
+2026-01-06 12:07:23.543 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder:85 - [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-01-06 12:30:26.704 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:54 - [ThreadPoolManager] Start destroying ThreadPool
+2026-01-06 12:30:26.704 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:134 - [NotifyCenter] Start destroying Publisher
+2026-01-06 12:30:26.705 [Thread-6] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder:102 - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-01-06 12:30:26.729 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:151 - [NotifyCenter] Destruction of the end
+2026-01-06 12:30:26.733 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:56 - [ThreadPoolManager] Destruction of the end
+2026-01-06 12:30:26.752 [Thread-6] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder:111 - [HttpClientBeanHolder] Destruction of the end

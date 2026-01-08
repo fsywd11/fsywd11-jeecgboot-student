@@ -1,0 +1,951 @@
+2026-01-05 14:16:49.223 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:21 - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-05 14:16:49.291 [main] INFO  org.jeecg.JeecgDemoCloudApplication:53 - Starting JeecgDemoCloudApplication using Java 17.0.17 with PID 32380 (D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot\jeecg-server-cloud\jeecg-demo-cloud-start\target\classes started by s1362 in D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot)
+2026-01-05 14:16:49.292 [main] INFO  org.jeecg.JeecgDemoCloudApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2026-01-05 14:16:49.564 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg-dev.yaml, group=DEFAULT_GROUP] success
+2026-01-05 14:16:49.565 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg.yaml, group=DEFAULT_GROUP] success
+2026-01-05 14:16:51.476 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:294 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-05 14:16:51.478 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-05 14:16:51.577 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:213 - Finished Spring Data repository scanning in 82 ms. Found 0 Redis repository interfaces.
+2026-01-05 14:16:51.759 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:23 -  ******************* init miniDao config [ begin ] *********************** 
+2026-01-05 14:16:51.760 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:26 -  ------ minidao.base-package ------- org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*
+2026-01-05 14:16:51.761 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:50 -  *******************  init miniDao config  [ end ] *********************** 
+2026-01-05 14:16:51.830 [main] WARN  o.j.minidao.factory.MiniDaoClassPathMapperScanner:42 - No Dao interface was found in '[org.jeecg.modules.jmreport.*, org.jeecg.modules.drag.*]' package. Please check your configuration.
+2026-01-05 14:16:52.035 [main] INFO  o.springframework.cloud.context.scope.GenericScope:280 - BeanFactory id=1379250b-c1d8-3b8b-a3db-fa83f249d270
+2026-01-05 14:16:52.542 [main] INFO  org.jeecg.config.shiro.ShiroConfig:293 - ===============(1)创建缓存管理器RedisCacheManager
+2026-01-05 14:16:52.544 [main] INFO  org.jeecg.config.shiro.ShiroConfig:314 - ===============(2)创建RedisManager,连接Redis..
+2026-01-05 14:16:53.213 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 7002 (http)
+2026-01-05 14:16:53.228 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-7002"]
+2026-01-05 14:16:53.230 [main] INFO  org.apache.catalina.core.StandardService:168 - Starting service [Tomcat]
+2026-01-05 14:16:53.230 [main] INFO  org.apache.catalina.core.StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2026-01-05 14:16:53.334 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring embedded WebApplicationContext
+2026-01-05 14:16:53.334 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 3764 ms
+2026-01-05 14:16:53.636 [main] INFO  org.apache.catalina.core.StandardContext:168 - Suspicious URL pattern: [/airag/chat/receive/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+2026-01-05 14:16:53.788 [main] INFO  org.jeecg.common.modules.redis.config.RedisConfig:77 -  --- redis config init ---，耗时: 66ms
+2026-01-05 14:16:54.176 [main] INFO  com.alibaba.druid.pool.DruidDataSource:673 - {dataSource-1,master} inited
+2026-01-05 14:16:54.178 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:158 - dynamic-datasource - add a datasource named [master] success
+2026-01-05 14:16:54.178 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:241 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-01-05 14:16:54.198 [main] INFO  org.jeecg.config.mybatis.MybatisPlusSaasConfig:138 - 当前数据库类型: MYSQL
+2026-01-05 14:16:54.982 [main] INFO  org.jeecg.config.WebMvcConfiguration:166 - PrometheusMeterRegistry 配置完成
+2026-01-05 14:16:55.223 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:48 - Init Token ignoreAuthUrls Config [ 集合 ]  ：[/test/jeecgDemo/html]
+2026-01-05 14:16:55.224 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:56 - Init Token ignoreAuthUrls Config [ 耗时 ] ：2ms
+2026-01-05 14:16:55.281 [main] INFO  o.j.modules.demo.shop.controller.ShopController:75 - 商品数据初始化完成,共13个商品
+2026-01-05 14:16:56.226 [main] INFO  c.alibaba.cloud.sentinel.SentinelWebMvcConfigurer:52 - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2026-01-05 14:16:57.112 [main] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware:40 - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@24a2e565
+2026-01-05 14:16:57.781 [main] INFO  org.quartz.impl.StdSchedulerFactory:1222 - Using default implementation for ThreadExecutor
+2026-01-05 14:16:57.784 [main] INFO  org.quartz.simpl.SimpleThreadPool:269 - Job execution threads will use class loader of thread: main
+2026-01-05 14:16:57.794 [main] INFO  org.quartz.core.SchedulerSignalerImpl:62 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-01-05 14:16:57.795 [main] INFO  org.quartz.core.QuartzScheduler:224 - Quartz Scheduler v2.5.0 created.
+2026-01-05 14:16:57.798 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:673 - Using db table-based data access locking (synchronization).
+2026-01-05 14:16:57.799 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:147 - JobStoreCMT initialized.
+2026-01-05 14:16:57.800 [main] INFO  org.quartz.core.QuartzScheduler:289 - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'MyScheduler' with instanceId 'aef1767593817783'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2026-01-05 14:16:57.800 [main] INFO  org.quartz.impl.StdSchedulerFactory:1376 - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2026-01-05 14:16:57.801 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.5.0
+2026-01-05 14:16:57.801 [main] INFO  org.quartz.core.QuartzScheduler:2240 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5a880dbe
+2026-01-05 14:16:58.809 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:60 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-05 14:16:59.108 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-7002"]
+2026-01-05 14:16:59.121 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 7002 (http) with context path '/'
+2026-01-05 14:16:59.147 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-01-05 14:16:59.148 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-01-05 14:16:59.201 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:76 - nacos registry, DEFAULT_GROUP jeecg-demo 10.210.176.208:7002 register finished
+2026-01-05 14:17:00.353 [main] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 14:17:00.356 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Pausing ProtocolHandler ["http-nio-7002"]
+2026-01-05 14:17:00.879 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown:76 - Graceful shutdown complete
+2026-01-05 14:17:00.880 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Stopping ProtocolHandler ["http-nio-7002"]
+2026-01-05 14:17:00.897 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:635 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'redisContainer'
+2026-01-05 14:17:00.904 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+2026-01-05 14:17:00.905 [main] INFO  org.quartz.core.QuartzScheduler:656 - Scheduler MyScheduler_$_aef1767593817783 shutting down.
+2026-01-05 14:17:00.905 [main] INFO  org.quartz.core.QuartzScheduler:576 - Scheduler MyScheduler_$_aef1767593817783 paused.
+2026-01-05 14:17:00.905 [main] INFO  org.quartz.core.QuartzScheduler:728 - Scheduler MyScheduler_$_aef1767593817783 shutdown complete.
+2026-01-05 14:17:00.907 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:95 - De-registering from Nacos Server now...
+2026-01-05 14:17:00.915 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:115 - De-registration finished.
+2026-01-05 14:17:00.928 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:215 - dynamic-datasource start closing ....
+2026-01-05 14:17:00.931 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1880 - {dataSource-1} closing ...
+2026-01-05 14:17:00.933 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1953 - {dataSource-1} closed
+2026-01-05 14:17:00.934 [main] INFO  c.b.d.d.destroyer.DefaultDataSourceDestroyer:98 - dynamic-datasource close the datasource named [master] success,
+2026-01-05 14:17:00.934 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:219 - dynamic-datasource all closed success,bye
+2026-01-05 14:17:01.091 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-05 14:17:01.121 [main] ERROR org.springframework.boot.SpringApplication:857 - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'redisContainer'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:408)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.jeecg.JeecgDemoCloudApplication.main(JeecgDemoCloudApplication.java:22)
+Caused by: org.springframework.data.redis.listener.adapter.RedisListenerExecutionFailedException: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lazyListen(RedisMessageListenerContainer.java:383)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.start(RedisMessageListenerContainer.java:361)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405)
+	... 14 common frames omitted
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1866)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1797)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1594)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1574)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1535)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1571)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1257)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:1063)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$Subscriber.lambda$initialize$0(RedisMessageListenerContainer.java:1241)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$Subscriber.doInLock(RedisMessageListenerContainer.java:1455)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$Subscriber.initialize(RedisMessageListenerContainer.java:1235)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.doSubscribe(RedisMessageListenerContainer.java:428)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lazyListen(RedisMessageListenerContainer.java:404)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lazyListen(RedisMessageListenerContainer.java:374)
+	... 16 common frames omitted
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:118)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1795)
+	... 28 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:63)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:41)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:354)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:220)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:112)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:112)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$getConnection$0(LettucePoolingConnectionProvider.java:100)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:270)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:257)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:68)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:557)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:299)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:231)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:149)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:144)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:113)
+	... 29 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:684)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-01-05 14:21:19.631 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:134 - [NotifyCenter] Start destroying Publisher
+2026-01-05 14:21:19.629 [Thread-6] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder:102 - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-01-05 14:21:19.630 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:54 - [ThreadPoolManager] Start destroying ThreadPool
+2026-01-05 14:21:19.636 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:151 - [NotifyCenter] Destruction of the end
+2026-01-05 14:21:19.636 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:56 - [ThreadPoolManager] Destruction of the end
+2026-01-05 14:22:10.951 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:21 - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-05 14:22:11.028 [main] INFO  org.jeecg.JeecgDemoCloudApplication:53 - Starting JeecgDemoCloudApplication using Java 17.0.17 with PID 37700 (D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot\jeecg-server-cloud\jeecg-demo-cloud-start\target\classes started by s1362 in D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot)
+2026-01-05 14:22:11.030 [main] INFO  org.jeecg.JeecgDemoCloudApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2026-01-05 14:22:11.289 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg-dev.yaml, group=DEFAULT_GROUP] success
+2026-01-05 14:22:11.290 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg.yaml, group=DEFAULT_GROUP] success
+2026-01-05 14:22:13.529 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:294 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-05 14:22:13.533 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-05 14:22:13.656 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:213 - Finished Spring Data repository scanning in 105 ms. Found 0 Redis repository interfaces.
+2026-01-05 14:22:14.000 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:23 -  ******************* init miniDao config [ begin ] *********************** 
+2026-01-05 14:22:14.001 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:26 -  ------ minidao.base-package ------- org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*
+2026-01-05 14:22:14.003 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:50 -  *******************  init miniDao config  [ end ] *********************** 
+2026-01-05 14:22:14.141 [main] WARN  o.j.minidao.factory.MiniDaoClassPathMapperScanner:42 - No Dao interface was found in '[org.jeecg.modules.jmreport.*, org.jeecg.modules.drag.*]' package. Please check your configuration.
+2026-01-05 14:22:14.389 [main] INFO  o.springframework.cloud.context.scope.GenericScope:280 - BeanFactory id=1379250b-c1d8-3b8b-a3db-fa83f249d270
+2026-01-05 14:22:15.120 [main] INFO  org.jeecg.config.shiro.ShiroConfig:293 - ===============(1)创建缓存管理器RedisCacheManager
+2026-01-05 14:22:15.123 [main] INFO  org.jeecg.config.shiro.ShiroConfig:314 - ===============(2)创建RedisManager,连接Redis..
+2026-01-05 14:22:16.003 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 7002 (http)
+2026-01-05 14:22:16.025 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-7002"]
+2026-01-05 14:22:16.029 [main] INFO  org.apache.catalina.core.StandardService:168 - Starting service [Tomcat]
+2026-01-05 14:22:16.029 [main] INFO  org.apache.catalina.core.StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2026-01-05 14:22:16.168 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring embedded WebApplicationContext
+2026-01-05 14:22:16.169 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 4875 ms
+2026-01-05 14:22:16.528 [main] INFO  org.apache.catalina.core.StandardContext:168 - Suspicious URL pattern: [/airag/chat/receive/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+2026-01-05 14:22:16.818 [main] INFO  org.jeecg.common.modules.redis.config.RedisConfig:77 -  --- redis config init ---，耗时: 184ms
+2026-01-05 14:22:17.272 [main] INFO  com.alibaba.druid.pool.DruidDataSource:673 - {dataSource-1,master} inited
+2026-01-05 14:22:17.273 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:158 - dynamic-datasource - add a datasource named [master] success
+2026-01-05 14:22:17.273 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:241 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-01-05 14:22:17.295 [main] INFO  org.jeecg.config.mybatis.MybatisPlusSaasConfig:138 - 当前数据库类型: MYSQL
+2026-01-05 14:22:19.029 [main] INFO  org.jeecg.config.WebMvcConfiguration:166 - PrometheusMeterRegistry 配置完成
+2026-01-05 14:22:19.655 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:48 - Init Token ignoreAuthUrls Config [ 集合 ]  ：[/test/jeecgDemo/html]
+2026-01-05 14:22:19.658 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:56 - Init Token ignoreAuthUrls Config [ 耗时 ] ：6ms
+2026-01-05 14:22:19.770 [main] INFO  o.j.modules.demo.shop.controller.ShopController:75 - 商品数据初始化完成,共13个商品
+2026-01-05 14:22:22.610 [main] INFO  c.alibaba.cloud.sentinel.SentinelWebMvcConfigurer:52 - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2026-01-05 14:22:25.250 [main] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware:40 - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48a663e9
+2026-01-05 14:22:26.309 [main] INFO  org.quartz.impl.StdSchedulerFactory:1222 - Using default implementation for ThreadExecutor
+2026-01-05 14:22:26.312 [main] INFO  org.quartz.simpl.SimpleThreadPool:269 - Job execution threads will use class loader of thread: main
+2026-01-05 14:22:26.325 [main] INFO  org.quartz.core.SchedulerSignalerImpl:62 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-01-05 14:22:26.326 [main] INFO  org.quartz.core.QuartzScheduler:224 - Quartz Scheduler v2.5.0 created.
+2026-01-05 14:22:26.329 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:673 - Using db table-based data access locking (synchronization).
+2026-01-05 14:22:26.331 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:147 - JobStoreCMT initialized.
+2026-01-05 14:22:26.332 [main] INFO  org.quartz.core.QuartzScheduler:289 - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'MyScheduler' with instanceId 'aef1767594146312'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2026-01-05 14:22:26.332 [main] INFO  org.quartz.impl.StdSchedulerFactory:1376 - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2026-01-05 14:22:26.332 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.5.0
+2026-01-05 14:22:26.332 [main] INFO  org.quartz.core.QuartzScheduler:2240 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@53c1f4ae
+2026-01-05 14:22:27.686 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:60 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-05 14:22:27.917 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-7002"]
+2026-01-05 14:22:27.931 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 7002 (http) with context path '/'
+2026-01-05 14:22:27.954 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-01-05 14:22:27.955 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-01-05 14:22:28.019 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:76 - nacos registry, DEFAULT_GROUP jeecg-demo 10.210.176.208:7002 register finished
+2026-01-05 14:22:29.209 [main] INFO  org.jeecg.JeecgDemoCloudApplication:59 - Started JeecgDemoCloudApplication in 20.545 seconds (process running for 21.527)
+2026-01-05 14:22:29.254 [redisContainer-1] WARN  org.jeecg.common.util.SpringContextHolder:59 - Customize redis listener handle [ loderRouderHandler ], does not exist！
+2026-01-05 14:22:29.257 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher:145 - [Nacos Config] Listening config: dataId=jeecg.yaml, group=DEFAULT_GROUP
+2026-01-05 14:22:29.259 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher:145 - [Nacos Config] Listening config: dataId=jeecg-dev.yaml, group=DEFAULT_GROUP
+2026-01-05 14:22:29.568 [RMI TCP Connection(6)-10.210.176.208] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-05 14:22:29.569 [RMI TCP Connection(6)-10.210.176.208] INFO  org.springframework.web.servlet.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-01-05 14:22:29.573 [RMI TCP Connection(6)-10.210.176.208] INFO  org.springframework.web.servlet.DispatcherServlet:554 - Completed initialization in 3 ms
+2026-01-05 14:22:29.609 [RMI TCP Connection(5)-10.210.176.208] INFO  c.a.c.sentinel.endpoint.SentinelHealthIndicator:92 - Find sentinel dashboard server list: []
+2026-01-05 14:22:33.104 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:22:33.230 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator
+2026-01-05 14:22:33.331 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:22:48.891 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:23:09.010 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:23:28.903 [http-nio-7002-exec-7] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:23:48.897 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:24:08.903 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:24:28.893 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:24:28.916 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:24:48.896 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:25:08.893 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:25:28.894 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:25:39.264 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:25:58.892 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:26:18.894 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:26:28.909 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:26:38.901 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:26:58.898 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:27:18.893 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:27:38.890 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:27:58.899 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:28:18.898 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:28:28.905 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:28:38.889 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:28:58.890 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:29:08.899 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:29:28.886 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:29:38.899 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:29:58.891 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:30:18.888 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:30:28.904 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:30:38.887 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:30:58.889 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:31:18.894 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:31:38.885 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:31:48.894 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:32:08.886 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:32:28.901 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:32:28.901 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:32:48.900 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:33:08.893 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:33:28.896 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:33:48.901 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:34:08.893 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:34:28.894 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:34:28.910 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:34:48.901 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:35:08.898 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:35:28.891 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:35:48.904 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:36:08.895 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:36:28.904 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:36:28.906 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:36:48.891 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:37:08.894 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:37:28.902 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:37:48.902 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:38:08.888 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:38:28.892 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:38:28.907 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:38:38.907 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:38:58.899 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:39:18.898 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:39:38.890 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:39:48.906 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:40:08.898 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:40:28.892 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:40:28.907 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:40:48.889 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:40:58.899 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:41:18.890 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:41:38.899 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:41:58.894 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:42:18.898 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:42:28.896 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:42:38.901 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:42:58.900 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:43:18.901 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:43:38.888 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:43:58.889 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:44:18.900 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:44:28.912 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:44:38.898 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:44:58.896 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:45:18.891 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:45:38.888 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:45:58.892 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:46:08.903 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:46:28.890 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:46:28.908 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:46:48.895 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:47:08.895 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:47:28.898 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:47:48.891 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:48:08.895 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:48:28.909 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:48:28.911 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:48:48.898 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:49:08.901 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:49:28.900 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:49:48.895 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:50:08.901 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:50:28.900 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:50:28.900 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:50:48.920 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:51:08.901 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:51:28.907 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:51:28.926 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:51:48.940 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:52:34.400 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:52:34.464 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator
+2026-01-05 14:52:34.654 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:52:48.893 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:53:08.898 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:53:28.897 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:53:48.905 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:54:09.006 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:54:28.903 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:54:28.921 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:54:48.894 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:55:08.903 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:55:28.906 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:55:48.903 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:56:08.895 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:56:28.896 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:56:28.942 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:56:48.906 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:57:08.905 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:57:28.905 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:57:48.910 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:58:08.900 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:58:28.899 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:58:28.929 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 14:58:48.898 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:59:08.914 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:59:28.902 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 14:59:48.891 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:00:08.893 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:00:28.902 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:00:28.905 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:00:48.894 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:01:08.973 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:01:28.901 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:01:48.897 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:02:08.899 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:02:28.893 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:02:28.912 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:02:48.905 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:03:08.901 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:03:28.890 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:03:38.901 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:03:58.897 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:04:18.898 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:04:28.914 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:04:38.890 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:04:58.901 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:05:18.900 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:05:38.890 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:05:58.890 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:06:18.897 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:06:28.957 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:06:38.891 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:06:58.890 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:07:18.888 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:07:38.906 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:07:58.889 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:08:18.903 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:08:28.918 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:08:38.899 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:08:58.895 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:09:18.917 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:09:38.899 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:09:58.903 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:10:18.907 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:10:28.909 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:10:38.900 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:10:58.900 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:11:18.896 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:11:38.895 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:11:58.905 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:12:18.898 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:12:28.914 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:12:38.907 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:12:58.901 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:13:18.899 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:13:38.908 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:13:58.895 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:14:18.890 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:14:28.914 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:14:38.888 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:14:48.902 [http-nio-7002-exec-8] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:15:08.910 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:15:28.894 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:15:48.897 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:16:08.894 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:16:28.890 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:16:28.905 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 15:16:48.898 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:17:08.898 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:17:23.184 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:134 - [NotifyCenter] Start destroying Publisher
+2026-01-05 15:17:23.185 [Thread-6] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder:102 - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-01-05 15:17:23.185 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:54 - [ThreadPoolManager] Start destroying ThreadPool
+2026-01-05 15:17:23.193 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:151 - [NotifyCenter] Destruction of the end
+2026-01-05 15:17:23.194 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:56 - [ThreadPoolManager] Destruction of the end
+2026-01-05 15:17:23.201 [Thread-6] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder:111 - [HttpClientBeanHolder] Destruction of the end
+2026-01-05 15:17:23.382 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:95 - De-registering from Nacos Server now...
+2026-01-05 15:17:24.236 [SpringApplicationShutdownHook] ERROR c.a.cloud.nacos.registry.NacosServiceRegistry:111 - ERR_NACOS_DEREGISTER, de-register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='null', username='******', password='******', endpoint='null', namespace='null', watchDelay=30000, logName='null', service='null', weight=1.0, clusterName='null', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={}, registerEnabled=true, ip='null', networkInterface='', port=-1, secure=false, accessKey='null', secretKey='null', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:624)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:447)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doDeregisterService(NamingGrpcClientProxy.java:308)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterServiceForEphemeral(NamingGrpcClientProxy.java:293)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterService(NamingGrpcClientProxy.java:275)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.deregisterService(NamingClientProxyDelegate.java:122)
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:211)
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:199)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.deregister(NacosServiceRegistry.java:107)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.deregister(AbstractAutoServiceRegistration.java:281)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.stop(AbstractAutoServiceRegistration.java:299)
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.onContextClosedEvent(NacosAutoServiceRegistration.java:122)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:383)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:255)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:174)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1163)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-01-05 15:17:24.246 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:115 - De-registration finished.
+2026-01-05 15:17:28.891 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 15:17:34.504 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 15:17:36.056 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown:76 - Graceful shutdown complete
+2026-01-05 15:17:36.283 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+2026-01-05 15:17:36.291 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler:656 - Scheduler MyScheduler_$_aef1767594146312 shutting down.
+2026-01-05 15:17:36.292 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler:576 - Scheduler MyScheduler_$_aef1767594146312 paused.
+2026-01-05 15:17:36.295 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler:728 - Scheduler MyScheduler_$_aef1767594146312 shutdown complete.
+2026-01-05 15:17:36.326 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:215 - dynamic-datasource start closing ....
+2026-01-05 15:17:36.403 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:1880 - {dataSource-1} closing ...
+2026-01-05 15:17:36.485 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:1953 - {dataSource-1} closed
+2026-01-05 15:17:36.485 [SpringApplicationShutdownHook] INFO  c.b.d.d.destroyer.DefaultDataSourceDestroyer:98 - dynamic-datasource close the datasource named [master] success,
+2026-01-05 15:17:36.487 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:219 - dynamic-datasource all closed success,bye
+2026-01-05 21:55:33.521 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:21 - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-05 21:55:33.624 [main] INFO  org.jeecg.JeecgDemoCloudApplication:53 - Starting JeecgDemoCloudApplication using Java 17.0.17 with PID 32900 (D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot\jeecg-server-cloud\jeecg-demo-cloud-start\target\classes started by s1362 in D:\software\jeecgboot\JeecgBoot-3.9.0\jeecg-boot)
+2026-01-05 21:55:33.626 [main] INFO  org.jeecg.JeecgDemoCloudApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2026-01-05 21:55:33.957 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg-dev.yaml, group=DEFAULT_GROUP] success
+2026-01-05 21:55:33.958 [main] INFO  c.a.cloud.nacos.configdata.NacosConfigDataLoader:68 - [Nacos Config] Load config[dataId=jeecg.yaml, group=DEFAULT_GROUP] success
+2026-01-05 21:55:36.389 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:294 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-05 21:55:36.393 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-05 21:55:36.532 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:213 - Finished Spring Data repository scanning in 119 ms. Found 0 Redis repository interfaces.
+2026-01-05 21:55:36.789 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:23 -  ******************* init miniDao config [ begin ] *********************** 
+2026-01-05 21:55:36.789 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:26 -  ------ minidao.base-package ------- org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*
+2026-01-05 21:55:36.791 [main] INFO  o.j.minidao.auto.MinidaoAutoConfiguration:50 -  *******************  init miniDao config  [ end ] *********************** 
+2026-01-05 21:55:36.926 [main] WARN  o.j.minidao.factory.MiniDaoClassPathMapperScanner:42 - No Dao interface was found in '[org.jeecg.modules.jmreport.*, org.jeecg.modules.drag.*]' package. Please check your configuration.
+2026-01-05 21:55:37.175 [main] INFO  o.springframework.cloud.context.scope.GenericScope:280 - BeanFactory id=1379250b-c1d8-3b8b-a3db-fa83f249d270
+2026-01-05 21:55:37.878 [main] INFO  org.jeecg.config.shiro.ShiroConfig:293 - ===============(1)创建缓存管理器RedisCacheManager
+2026-01-05 21:55:37.881 [main] INFO  org.jeecg.config.shiro.ShiroConfig:314 - ===============(2)创建RedisManager,连接Redis..
+2026-01-05 21:55:38.733 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 7002 (http)
+2026-01-05 21:55:38.751 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-7002"]
+2026-01-05 21:55:38.754 [main] INFO  org.apache.catalina.core.StandardService:168 - Starting service [Tomcat]
+2026-01-05 21:55:38.754 [main] INFO  org.apache.catalina.core.StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2026-01-05 21:55:38.953 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring embedded WebApplicationContext
+2026-01-05 21:55:38.953 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 4989 ms
+2026-01-05 21:55:39.386 [main] INFO  org.apache.catalina.core.StandardContext:168 - Suspicious URL pattern: [/airag/chat/receive/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+2026-01-05 21:55:39.585 [main] INFO  org.jeecg.common.modules.redis.config.RedisConfig:77 -  --- redis config init ---，耗时: 96ms
+2026-01-05 21:55:40.105 [main] INFO  com.alibaba.druid.pool.DruidDataSource:673 - {dataSource-1,master} inited
+2026-01-05 21:55:40.106 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:158 - dynamic-datasource - add a datasource named [master] success
+2026-01-05 21:55:40.107 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:241 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-01-05 21:55:40.133 [main] INFO  org.jeecg.config.mybatis.MybatisPlusSaasConfig:138 - 当前数据库类型: MYSQL
+2026-01-05 21:55:41.160 [main] INFO  org.jeecg.config.WebMvcConfiguration:166 - PrometheusMeterRegistry 配置完成
+2026-01-05 21:55:41.478 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:48 - Init Token ignoreAuthUrls Config [ 集合 ]  ：[/test/jeecgDemo/html]
+2026-01-05 21:55:41.480 [main] INFO  o.j.config.shiro.ignore.IgnoreAuthPostProcessor:56 - Init Token ignoreAuthUrls Config [ 耗时 ] ：3ms
+2026-01-05 21:55:41.560 [main] INFO  o.j.modules.demo.shop.controller.ShopController:75 - 商品数据初始化完成,共13个商品
+2026-01-05 21:55:42.988 [main] INFO  c.alibaba.cloud.sentinel.SentinelWebMvcConfigurer:52 - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2026-01-05 21:55:44.444 [main] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware:40 - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4694f434
+2026-01-05 21:55:45.442 [main] INFO  org.quartz.impl.StdSchedulerFactory:1222 - Using default implementation for ThreadExecutor
+2026-01-05 21:55:45.447 [main] INFO  org.quartz.simpl.SimpleThreadPool:269 - Job execution threads will use class loader of thread: main
+2026-01-05 21:55:45.461 [main] INFO  org.quartz.core.SchedulerSignalerImpl:62 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-01-05 21:55:45.462 [main] INFO  org.quartz.core.QuartzScheduler:224 - Quartz Scheduler v2.5.0 created.
+2026-01-05 21:55:45.468 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:673 - Using db table-based data access locking (synchronization).
+2026-01-05 21:55:45.471 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:147 - JobStoreCMT initialized.
+2026-01-05 21:55:45.473 [main] INFO  org.quartz.core.QuartzScheduler:289 - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'MyScheduler' with instanceId 'aef1767621345444'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2026-01-05 21:55:45.473 [main] INFO  org.quartz.impl.StdSchedulerFactory:1376 - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2026-01-05 21:55:45.473 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.5.0
+2026-01-05 21:55:45.474 [main] INFO  org.quartz.core.QuartzScheduler:2240 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c879ea5
+2026-01-05 21:55:46.547 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.common.ability.AbstractAbilityControlManager:61 - Ready to get current node abilities...
+2026-01-05 21:55:46.549 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.common.ability.AbstractAbilityControlManager:89 - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-01-05 21:55:46.551 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.common.ability.AbstractAbilityControlManager:94 - Initialize current abilities finish...
+2026-01-05 21:55:46.553 [com.alibaba.nacos.client.remote.worker.1] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder:85 - [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-01-05 21:55:46.885 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:60 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-05 21:55:47.124 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-7002"]
+2026-01-05 21:55:47.138 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 7002 (http) with context path '/'
+2026-01-05 21:55:47.155 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-01-05 21:55:47.155 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-01-05 21:55:47.233 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:76 - nacos registry, DEFAULT_GROUP jeecg-demo 10.210.176.208:7002 register finished
+2026-01-05 21:55:48.369 [main] INFO  org.jeecg.JeecgDemoCloudApplication:59 - Started JeecgDemoCloudApplication in 18.709 seconds (process running for 19.941)
+2026-01-05 21:55:48.425 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher:145 - [Nacos Config] Listening config: dataId=jeecg.yaml, group=DEFAULT_GROUP
+2026-01-05 21:55:48.425 [redisContainer-1] WARN  org.jeecg.common.util.SpringContextHolder:59 - Customize redis listener handle [ loderRouderHandler ], does not exist！
+2026-01-05 21:55:48.426 [redisContainer-2] WARN  org.jeecg.common.util.SpringContextHolder:59 - Customize redis listener handle [ loderRouderHandler ], does not exist！
+2026-01-05 21:55:48.428 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher:145 - [Nacos Config] Listening config: dataId=jeecg-dev.yaml, group=DEFAULT_GROUP
+2026-01-05 21:55:48.643 [RMI TCP Connection(8)-10.210.176.208] INFO  c.a.c.sentinel.endpoint.SentinelHealthIndicator:92 - Find sentinel dashboard server list: []
+2026-01-05 21:55:48.697 [RMI TCP Connection(10)-10.210.176.208] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-05 21:55:48.697 [RMI TCP Connection(10)-10.210.176.208] INFO  org.springframework.web.servlet.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-01-05 21:55:48.702 [RMI TCP Connection(10)-10.210.176.208] INFO  org.springframework.web.servlet.DispatcherServlet:554 - Completed initialization in 4 ms
+2026-01-05 21:55:52.288 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:55:52.408 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator
+2026-01-05 21:55:52.535 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 21:56:08.859 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:56:28.976 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:56:48.759 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:57:08.758 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:57:28.744 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:57:48.752 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:57:48.784 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 21:58:08.755 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:58:28.751 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:58:48.757 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:59:08.745 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:59:28.747 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:59:48.742 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 21:59:48.767 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:00:08.759 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:00:28.747 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:00:48.740 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:01:08.743 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:01:28.758 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:01:48.751 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:01:48.767 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:02:08.747 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:02:28.757 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:02:48.753 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:03:08.748 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:03:28.740 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:03:48.745 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:03:48.766 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:04:08.749 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:04:28.739 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:04:48.752 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:05:08.745 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:05:18.766 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:05:38.744 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:05:48.779 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:05:58.747 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:06:18.752 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:06:38.743 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:06:58.746 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:07:18.745 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:07:38.751 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:07:48.766 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:07:58.751 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:08:18.745 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:08:38.759 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:08:58.751 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:09:18.750 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:09:38.751 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:09:48.766 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:09:58.749 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:10:18.741 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:10:38.750 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:10:58.755 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:11:18.746 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:11:38.757 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:11:48.754 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:11:58.746 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:12:18.757 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:12:38.750 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:12:58.752 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:13:18.747 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:13:38.748 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:13:48.767 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:13:58.749 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:14:18.746 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:14:38.756 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:14:58.748 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:15:18.750 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:15:38.742 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:15:48.761 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:15:58.740 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:16:08.753 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:16:28.741 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:16:38.749 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:16:58.748 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:17:18.757 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:17:38.747 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:17:48.766 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:17:58.748 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:18:18.741 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:18:28.753 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:18:48.753 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:19:08.747 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:19:28.750 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:19:48.749 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:19:48.762 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:20:08.743 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:20:28.752 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:20:48.742 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:21:08.768 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:21:28.746 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:21:48.745 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:21:48.760 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:22:08.744 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:22:18.754 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:22:38.752 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:22:58.753 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:23:18.741 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:23:28.755 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:23:48.752 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:23:48.752 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:24:08.742 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:24:18.754 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:24:38.750 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:24:48.764 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:24:58.752 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:25:18.756 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:25:38.744 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:25:48.750 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:26:08.753 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:26:28.742 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:26:38.750 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:26:48.755 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:26:58.755 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:27:18.747 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:27:38.742 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:27:48.752 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:28:08.752 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:28:28.746 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:28:48.746 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:28:48.758 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:29:08.749 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:29:28.752 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:29:48.752 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:30:08.753 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:30:28.754 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:30:48.751 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:30:48.765 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:31:08.743 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:31:28.752 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:31:48.743 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:32:08.755 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:32:28.744 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:32:38.762 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:32:48.765 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:32:58.756 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:33:18.744 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:33:38.749 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:33:58.751 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:34:18.754 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:34:38.741 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:34:48.764 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:34:58.755 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:35:18.743 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:35:38.753 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:35:58.778 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:36:18.743 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:36:38.753 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:36:48.755 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:36:58.743 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:37:18.743 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:37:38.750 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:37:58.741 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:38:18.755 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:38:38.754 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:38:48.760 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:38:58.744 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:39:18.754 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:39:38.746 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:39:58.755 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:40:18.748 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:40:38.760 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:40:48.753 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:40:58.742 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:41:18.772 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:41:38.758 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:41:48.768 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:41:58.749 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:42:18.762 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:42:38.756 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:42:58.757 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:43:18.757 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:43:38.757 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:43:48.759 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:43:58.759 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:44:18.750 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:44:38.795 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:44:58.750 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:45:18.762 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:45:38.752 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:45:48.761 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:45:58.754 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:46:18.766 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:46:38.748 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:46:58.757 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:47:18.754 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:47:38.748 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:47:48.766 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:47:58.749 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:48:18.754 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:48:38.751 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:48:58.748 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:49:18.757 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:49:38.749 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:49:48.761 [http-nio-7002-exec-2] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:49:58.753 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:50:18.760 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:50:38.749 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:50:48.880 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:50:48.917 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:51:27.829 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:51:27.855 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator
+2026-01-05 22:51:28.276 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:51:38.740 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:51:58.753 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:52:18.760 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:52:38.757 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:52:48.765 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:52:58.741 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:53:18.745 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:53:38.755 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:53:58.756 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:54:18.760 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:54:38.759 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:54:48.756 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:54:58.750 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:55:18.795 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:55:38.747 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:55:58.741 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:56:18.751 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:56:38.748 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:56:48.754 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:56:58.740 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:57:18.750 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:57:38.751 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:57:48.767 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:57:58.750 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:58:18.748 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:58:38.768 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:58:58.801 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:59:18.754 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:59:38.748 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 22:59:48.768 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 22:59:58.747 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:00:18.750 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:00:38.752 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:00:58.761 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:01:18.753 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:01:38.761 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:01:48.758 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:01:58.748 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:02:18.759 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:02:38.800 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:02:58.754 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:03:18.744 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:03:38.752 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:03:48.761 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:03:58.751 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:04:18.756 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:04:38.760 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:04:58.749 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:05:18.747 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:05:38.764 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:05:48.764 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:05:58.748 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:06:18.757 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:06:38.750 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:06:58.741 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:07:18.750 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:07:38.757 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:07:48.761 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:07:58.755 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:08:18.745 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:08:38.745 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:08:58.756 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:09:18.747 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:09:38.751 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:09:48.760 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:09:58.748 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:10:18.753 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:10:38.761 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:10:58.753 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:11:18.756 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:11:38.753 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:11:48.764 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:11:58.750 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:12:18.756 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:12:38.757 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:12:58.744 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:13:18.749 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:13:38.751 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:13:48.767 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:13:58.752 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:14:18.755 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:14:38.756 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:14:58.755 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:15:18.757 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:15:38.752 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:15:48.765 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:15:58.747 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:16:18.756 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:16:38.744 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:16:58.747 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:17:18.742 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:17:28.754 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:17:48.752 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:17:48.773 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:18:08.741 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:18:28.746 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:18:48.750 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:19:08.745 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:19:28.756 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:19:48.749 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:19:48.764 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:20:08.757 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:20:28.741 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:20:48.746 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:21:08.743 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:21:18.754 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:21:38.756 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:21:48.763 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:21:58.747 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:22:18.748 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:22:38.744 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:22:58.749 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:23:18.749 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:23:38.746 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:23:48.763 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:23:58.755 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:24:18.746 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:24:38.744 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:24:48.757 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:25:08.754 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:25:28.755 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:25:48.759 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:25:48.803 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:26:08.755 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:26:28.753 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:26:48.745 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:27:08.746 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:27:28.750 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:27:48.747 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:27:48.759 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:28:08.745 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:28:28.744 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:28:48.759 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:29:08.749 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:29:28.747 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:29:48.755 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:29:48.767 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:30:08.759 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:30:28.746 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:30:48.755 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:31:08.751 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:31:28.750 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:31:48.747 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:31:48.762 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:32:08.757 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:32:28.759 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:32:48.753 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:33:08.750 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:33:28.744 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:33:48.751 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:33:48.768 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:34:08.746 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:34:28.753 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:34:48.743 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:35:08.774 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:35:28.746 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:35:48.746 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:35:48.764 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:36:08.749 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:36:28.749 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:36:48.751 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:37:08.774 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:37:28.747 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:37:48.753 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:37:48.769 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:38:08.755 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:38:28.755 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:38:48.751 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:39:08.755 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:39:28.756 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:39:48.744 [http-nio-7002-exec-5] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:39:48.759 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:40:08.762 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:40:28.754 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:40:48.752 [http-nio-7002-exec-1] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:41:08.753 [http-nio-7002-exec-6] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:41:28.749 [http-nio-7002-exec-3] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:41:48.743 [http-nio-7002-exec-4] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:41:48.759 [http-nio-7002-exec-10] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:42:08.757 [http-nio-7002-exec-9] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:43:19.485 [http-nio-7002-exec-11] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:43:31.240 [http-nio-7002-exec-12] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/health
+2026-01-05 23:43:34.198 [Thread-6] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder:102 - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-01-05 23:43:34.198 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:134 - [NotifyCenter] Start destroying Publisher
+2026-01-05 23:43:34.198 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:54 - [ThreadPoolManager] Start destroying ThreadPool
+2026-01-05 23:43:34.209 [Thread-8] WARN  com.alibaba.nacos.common.notify.NotifyCenter:151 - [NotifyCenter] Destruction of the end
+2026-01-05 23:43:34.214 [Thread-1] WARN  c.alibaba.nacos.common.executor.ThreadPoolManager:56 - [ThreadPoolManager] Destruction of the end
+2026-01-05 23:43:34.260 [Thread-6] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder:111 - [HttpClientBeanHolder] Destruction of the end
+2026-01-05 23:43:34.385 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:95 - De-registering from Nacos Server now...
+2026-01-05 23:43:34.783 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:115 - De-registration finished.
+2026-01-05 23:43:39.476 [http-nio-7002-exec-13] INFO  org.jeecg.config.shiro.ShiroRealm:104 - ————————身份认证失败——————————IP地址:  10.210.176.208，URL:/actuator/info
+2026-01-05 23:43:45.096 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 23:43:45.736 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown:76 - Graceful shutdown complete
+2026-01-05 23:43:46.019 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+2026-01-05 23:43:46.032 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler:656 - Scheduler MyScheduler_$_aef1767621345444 shutting down.
+2026-01-05 23:43:46.034 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler:576 - Scheduler MyScheduler_$_aef1767621345444 paused.
+2026-01-05 23:43:46.037 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler:728 - Scheduler MyScheduler_$_aef1767621345444 shutdown complete.
+2026-01-05 23:43:46.054 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:215 - dynamic-datasource start closing ....
+2026-01-05 23:43:46.108 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:1880 - {dataSource-1} closing ...
+2026-01-05 23:43:46.161 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:1953 - {dataSource-1} closed
+2026-01-05 23:43:46.162 [SpringApplicationShutdownHook] INFO  c.b.d.d.destroyer.DefaultDataSourceDestroyer:98 - dynamic-datasource close the datasource named [master] success,
+2026-01-05 23:43:46.162 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:219 - dynamic-datasource all closed success,bye

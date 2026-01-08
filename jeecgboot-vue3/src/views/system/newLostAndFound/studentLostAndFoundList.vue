@@ -247,8 +247,8 @@ function getTableAction(record) {
       // 非申请人，不显示任何操作按钮
       return [];
     }
-  } else {
-    // 状态非2（未申请），显示“申请”按钮
+  } else if (record.status === INIT_STATUS) {
+    // 状态为1（未申请），显示“申请”按钮
     return [
       {
         label: '申请',

@@ -332,7 +332,7 @@ justauth:
   type:
     GITHUB:
       client-id: Ov23li4Axodn6Q9QVS9S
-      client-secret: 6492cef11ece57287bdec59a4f66ca1dd3967a2a
+      client-secret: af3983f36177a82e4e60308e19e7577b68a6abbf
       redirect-uri: http://127.0.0.1:8080/jeecg-boot/sys/thirdLogin/github/callback
     WECHAT_ENTERPRISE:
       client-id: ??

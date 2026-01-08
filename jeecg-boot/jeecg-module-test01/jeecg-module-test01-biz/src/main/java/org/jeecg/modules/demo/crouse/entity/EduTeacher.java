@@ -60,9 +60,9 @@ public class EduTeacher implements Serializable {
 	@Excel(name = "工号", width = 15)
     @Schema(description = "工号")
     private String teacherNo;
-	/**所属学院*/
-	@Excel(name = "所属学院", width = 15, dicCode = "COLLEGE")
-	@Dict(dicCode = "COLLEGE")
+    /**所属学院*/
+    @Excel(name = "所属学院", width = 15, dicCode = "college")
+    @Dict(dicCode = "college")
     @Schema(description = "所属学院")
     private String college;
 	/**教研室*/

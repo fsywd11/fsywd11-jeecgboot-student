@@ -5,81 +5,91 @@ import { render } from '/@/utils/common/renderUtils';
 import { getWeekMonthQuarterYear } from '/@/utils';
 //列表数据
 export const columns: BasicColumn[] = [
-   {
+  {
     title: '选课id',
-    align:"center",
-    dataIndex: 'selectId'
-   },
-   {
+    align: 'center',
+    dataIndex: 'selectId',
+  },
+  {
     title: '学生id',
-    align:"center",
-    dataIndex: 'studentId'
-   },
-   {
+    align: 'center',
+    dataIndex: 'studentId',
+  },
+  {
     title: '课程id',
-    align:"center",
-    dataIndex: 'courseId'
-   },
-   {
+    align: 'center',
+    dataIndex: 'courseId',
+  },
+  {
     title: '学期编码',
-    align:"center",
-    dataIndex: 'termCode'
-   },
-   {
+    align: 'center',
+    dataIndex: 'termCode',
+  },
+  {
     title: '教师id',
-    align:"center",
-    dataIndex: 'teacherId'
-   },
-   {
+    align: 'center',
+    dataIndex: 'teacherId',
+  },
+  {
     title: '平时成绩',
-    align:"center",
-    dataIndex: 'usualScore'
-   },
-   {
+    align: 'center',
+    dataIndex: 'usualScore',
+  },
+  {
     title: '平时成绩占比',
-    align:"center",
-    dataIndex: 'usualScorePersent'
-   },
-   {
+    align: 'center',
+    dataIndex: 'usualScorePersent',
+  },
+  {
     title: '期中成绩',
-    align:"center",
-    dataIndex: 'midScore'
-   },
-   {
+    align: 'center',
+    dataIndex: 'midScore',
+  },
+  {
     title: '期中成绩占比',
-    align:"center",
-    dataIndex: 'midScorePersent'
-   },
-   {
+    align: 'center',
+    dataIndex: 'midScorePersent',
+  },
+  {
     title: '期末成绩',
-    align:"center",
-    dataIndex: 'finalScore'
-   },
-   {
+    align: 'center',
+    dataIndex: 'finalScore',
+  },
+  {
     title: '期末成绩占比',
-    align:"center",
-    dataIndex: 'finalScorePersent'
-   },
-   {
+    align: 'center',
+    dataIndex: 'finalScorePersent',
+  },
+  {
     title: '综合成绩',
-    align:"center",
-    dataIndex: 'totalScore'
-   },
-   {
+    align: 'center',
+    dataIndex: 'totalScore',
+  },
+  {
     title: '绩点',
-    align:"center",
-    dataIndex: 'gradePoint'
-   },
-   {
+    align: 'center',
+    dataIndex: 'gradePoint',
+    // 新增2：格式化小数位数（关键配置，digits指定保留几位小数，这里以1位为例，可改为2）
+    customRender: ({ record }) => {
+      // 兼容数据为null/undefined的情况，避免显示异常
+      const gradePoint = record.gradePoint;
+      if (gradePoint === null || gradePoint === undefined) {
+        return '-';
+      }
+      // 格式化为指定小数位数，返回字符串格式确保显示一致
+      return gradePoint.toFixed(1); // 1表示保留1位小数，如需2位则改为toFixed(2)
+    },
+  },
+  {
     title: '成绩状态',
-    align:"center",
-    dataIndex: 'scoreStatus_dictText'
-   },
-   {
+    align: 'center',
+    dataIndex: 'scoreStatus_dictText',
+  },
+  {
     title: '备注',
-    align:"center",
-    dataIndex: 'remark'
-   },
+    align: 'center',
+    dataIndex: 'remark',
+  },
 ];
 //查询数据
 export const searchFormSchema: FormSchema[] = [

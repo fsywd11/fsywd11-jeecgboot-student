@@ -176,7 +176,7 @@ public class EduCourseController extends JeecgController<EduCourse, IEduCourseSe
 	 @GetMapping("/getOptionalCourses")
 	 public Result<List<EduCourse>> getOptionalCourses() {
 		 QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();
-		 queryWrapper.eq("status", 2) // 状态：1=可选
+		 queryWrapper.eq("status", 2) // 状态：2=可选
 				 .apply("current_student < max_student"); // 当前人数<最大人数
 		 List<EduCourse> optionalCourses = eduCourseService.list(queryWrapper);
 		 return Result.OK(optionalCourses);

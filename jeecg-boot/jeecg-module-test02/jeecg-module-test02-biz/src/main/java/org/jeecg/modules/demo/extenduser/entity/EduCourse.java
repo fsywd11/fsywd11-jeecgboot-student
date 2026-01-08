@@ -59,9 +59,9 @@ public class EduCourse implements Serializable {
 	@Excel(name = "课程名称", width = 15)
     @Schema(description = "课程名称")
     private String courseName;
-	/**开课学院*/
-	@Excel(name = "开课学院", width = 15, dicCode = "COLLEGE")
-	@Dict(dicCode = "COLLEGE")
+    /**所属学院*/
+    @Excel(name = "开课学院", width = 15, dicCode = "college")
+    @Dict(dicCode = "college")
     @Schema(description = "开课学院")
     private String college;
 	/**学分*/
